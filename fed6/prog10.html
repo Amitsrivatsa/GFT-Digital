@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+<script>
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+  console.log('Name: ' + profile.getName());
+  console.log('Image URL: ' + profile.getImageUrl());
+  console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+  $('i1').src=profile.getImageUrl();
+  $('d1').css({background: profile.getImageUrl()})
+}
+</script>
+</head>
+<body>
+
+<p>This is an input box.</p>
+<button onclick="onSignIn()">Append text</button>
+<div id="d1"></div>
+<img id="i1">
+</body>
+</html>

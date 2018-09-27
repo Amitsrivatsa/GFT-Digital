@@ -1,0 +1,12 @@
+div>a:link{
+	color:red ;
+}
+div>a:hover {
+	color: hotpink;
+}
+div>a:visited {
+	color: yellow;
+}
+div>p:hover{
+	
+}

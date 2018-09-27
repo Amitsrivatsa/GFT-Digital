@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var g=10;
+		var c=100;
+		function inc() {
+			var c=10;
+			g +=c;
+		}
+		function v()
+		{
+			inc();
+			console.log(g);
+			console.log(this.c);
+		}
+		console.log(c)
+	</script>
+
+</body>
+<input type="button" onclick="v()">
+</html>

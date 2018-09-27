@@ -1,0 +1,14 @@
+* {
+color: blue ; 
+background: silver; 
+}
+#heading
+{
+	border: 1px solid black;
+}
+h2>p{
+	color: red;
+}
+p~p{
+	text-align: center;
+}

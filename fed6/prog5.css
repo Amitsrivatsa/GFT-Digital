@@ -1,0 +1,11 @@
+.normal{
+	border: 1px solid black;
+	height: 400px;
+	width: 300px;
+
+}
+.zoom{
+	border: 10px solid black;
+	height: 600px;
+	width: 500px;
+}
